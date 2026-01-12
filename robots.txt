@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hoskinhaus.com/sitemap.xml
+Sitemap: https://www.hoskinhaus.com/sitemap.xml
