@@ -8,12 +8,12 @@ Our work is grounded in long-term thinking, careful stewardship, and respect for
 
 ## Site Structure
 
-/
-├─ index.html
-├─ assets/
-├─ degoogle/
-│   └─ index.html
-├─ 404.html
+  /  
+  ├─ index.html  
+  ├─ assets/  
+  ├─ degoogle/  
+  │   └─ index.html  
+  ├─ 404.html  
 
 ---
 
