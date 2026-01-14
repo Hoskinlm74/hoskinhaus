@@ -17,20 +17,24 @@ No unnecessary dependencies.
 ## Maintenance Principles
 
 When editing this site 
-  /   Prefer clarity ov  ├─ images/s  │   └──favicon.png
-  │   └──hero-worker.jpg 
-  │   └──job1.jpg 
-  │   └──job2.jpg
-  │   └──job3.jpg
-  │   └──truck.jpg
-  │   └──logo-main.png
-  ├─ favicon.ico
-  ├─ 404.html
-  ├─ index.html
-  ├─ robots.txt
-  ├─ sitemap.xml
-  └─ about/  
-      └── about.html   ove algorithmic optimization.
+Prefer clarity 
+Over algorithmic optimization.
+
+  ├─ images/  <br>
+  │   └──favicon.png <br>
+  │   └──hero-worker.jpg <br>
+  │   └──job1.jpg  <br>
+  │   └──job2.jpg  <br>
+  │   └──job3.jpg  <br>
+  │   └──truck.jpg  <br>
+  │   └──logo-main.png  <br>
+  ├─ favicon.ico  <br>
+  ├─ 404.html  <br>
+  ├─ index.html  <br>
+  ├─ robots.txt  <br>
+  ├─ sitemap.xml  <br>
+  └─ about/   <br>
+      └── about.html <br> 
 
 ---
 
