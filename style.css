@@ -194,8 +194,8 @@ h3 {
 .brand-logo {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
+  border-radius: 150%;
+  border: 1px solid var(--accent);
   object-fit: contain;
   background: #fff;
   /* Ensure logo pops against dark theme */
