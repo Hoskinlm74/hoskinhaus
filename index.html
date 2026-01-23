@@ -5,7 +5,378 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta cha<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <meta charset="UTF-8">
+  <title>Hoskin Haus Tree Service | Randolph County, IL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Hoskin Haus Tree Service — local, family-owned tree removal, trimming, yard clearing, pressure washing, and storm cleanup. Serving Randolph County & surrounding areas.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Hoskin Haus Tree Service">
+  <meta property="og:description" content="Professional, safe, and family-owned tree service in Randolph County.">
+  <meta property="og:image" content="images/hero-worker.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="images/favicon.png" alt="Hoskin Haus Tree Service logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>Hoskin Haus Tree Service</h1>
+          <p class="tagline">Serving Randolph County & Surrounding Areas</p>
+        </div>
+      </div>
+      <div class="header-cta">
+        <a href="tel:16183177817" class="btn btn-primary">Call Chuck: 618-317-7817</a>
+        <p class="license-line">LLC & TCIA Certified • Fully Insured</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Rugged Work. Neighborly Care. Professional Results.</h2>
+        <p>Local, family-owned tree service based in Southern Illinois. Safe, certified, and ready for the hard jobs.
+        </p>
+        <div class="hero-actions">
+          <a href="tel:16183177817" class="btn btn-accent">Call for a Free Estimate</a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-worker.jpg" alt="Professional tree worker using chainsaw and safety gear">
+      </div>
+    </section>
+
+    <!-- Winter trimming highlight -->
+    <section class="winter-callout">
+      <div class="section-inner">
+        <h2>Winter is the Best Time to Trim Your Trees</h2>
+        <div class="winter-grid">
+          <div class="winter-text">
+            <p>Winter tree work protects your trees, your home, and your wallet.</p>
+            <ul>
+              <li><strong>Trees are dormant</strong> — less stress, better healing.</li>
+              <li><strong>No leaves</strong> — easier access and visibility.</li>
+              <li><strong>Storm-ready</strong> — prepares your property for spring storms and growth.</li>
+            </ul>
+            <p>Get ahead of spring. Schedule your trimming while conditions are in your favor.</p>
+          </div>
+          <div class="winter-cta-card">
+            <p class="winter-cta-title">Ready when you are.</p>
+            <p>Call Chuck today for safe, honest, and professional tree work.</p>
+            <a href="tel:16183177817" class="btn btn-primary btn-block">Call 618-317-7817</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process & Safety (Infographics) -->
+    <section class="process-section">
+      <div class="section-inner">
+        <h2>The Hoskin Haus Process: Assessment & Safety</h2>
+        <p class="lead">We don't just cut trees; we analyze the risk and execute the solution. Here is how we evaluate
+          structural failure risks.</p>
+
+        <div class="infographic-grid"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+          <div class="infographic-item">
+            <h3 style="color: var(--accent);">The Risk</h3>
+            <img src="images/The_Risk__Ice,_Wind,_and_Structural_Failure__version_11.png"
+              alt="Infographic detailing ice, wind, and structural failure risks for trees"
+              style="width: 100%; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-soft);">
+          </div>
+          <div class="infographic-item">
+            <h3 style="color: var(--accent);">The Solution</h3>
+            <img src="images/The_Solution__Precision_Risk_Evaluation__version_1.png"
+              alt="Infographic detailing precision risk evaluation metrics"
+              style="width: 100%; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-soft);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estimator Section -->
+    <section class="estimator" id="quote">
+      <div class="section-inner">
+        <h2>Get a Ballpark Estimate</h2>
+        <p class="lead">Curious about costs? Select your project details below for a rough range.
+          <br><small><em>(Note: All prices are estimates. Final price requires on-site safety inspection.)</em></small>
+        </p>
+
+        <div class="estimator-card">
+          <form id="quoteForm" oninput="calculateTotal()">
+            <div class="form-group">
+              <label for="serviceType">Service Type</label>
+              <select id="serviceType" class="form-control">
+                <option value="trim">Tree Trimming</option>
+                <option value="removal">Tree Removal</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="treeSize">Tree Size (Approximate)</label>
+              <select id="treeSize" class="form-control">
+                <option value="1">Small (Under 15ft)</option>
+                <option value="2">Medium (15-30ft)</option>
+                <option value="3">Large (30-60ft)</option>
+                <option value="4">Giant/Hazardous (60ft+)</option>
+              </select>
+            </div>
+
+            <div class="form-checks">
+              <label class="check-label">
+                <input type="checkbox" id="riskStructure"> Near House/Structure
+              </label>
+              <label class="check-label">
+                <input type="checkbox" id="riskPower"> Near Power Lines/Fence
+              </label>
+              <label class="check-label">
+                <input type="checkbox" id="riskAccess"> Difficult Access (No Truck Access)
+              </label>
+            </div>
+
+            <div class="result-box">
+              <p>Estimated Range:</p>
+              <div class="price-display" id="priceDisplay">$200 - $400</div>
+              <p class="disclaimer">*Calculated estimate only. Not a binding contract.</p>
+
+              <button type="button" class="btn btn-primary btn-block" onclick="sendQuoteEmail()">
+                Email These Details to Chuck
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function calculateTotal() {
+        const type = document.getElementById('serviceType').value;
+        const size = parseInt(document.getElementById('treeSize').value);
+        let base = 200;
+        let multiplier = 1;
+
+        // Base logic
+        if (type === 'removal') { base = 400; multiplier = 1.5; }
+
+        // Size logic
+        let sizeCost = (base * size * multiplier);
+
+        // Risky adder
+        let riskFactor = 0;
+        if (document.getElementById('riskStructure').checked) riskFactor += 0.2;
+        if (document.getElementById('riskPower').checked) riskFactor += 0.3;
+        if (document.getElementById('riskAccess').checked) riskFactor += 0.2;
+
+        let total = sizeCost * (1 + riskFactor);
+
+        // Create a range (+/- 20%)
+        let min = Math.round((total * 0.8) / 50) * 50;
+        let max = Math.round((total * 1.2) / 50) * 50;
+
+        document.getElementById('priceDisplay').innerText = `$${min} - $${max}`;
+      }
+
+      function sendQuoteEmail() {
+        const type = document.getElementById('serviceType').options[document.getElementById('serviceType').selectedIndex].text;
+        const size = document.getElementById('treeSize').options[document.getElementById('treeSize').selectedIndex].text;
+        const range = document.getElementById('priceDisplay').innerText;
+
+        let risks = [];
+        if (document.getElementById('riskStructure').checked) risks.push("Near House");
+        if (document.getElementById('riskPower').checked) risks.push("Near Power Lines");
+        if (document.getElementById('riskAccess').checked) risks.push("Difficult Access");
+
+        const subject = `Quote Request: ${type} (${size})`;
+        const body = `Hi Chuck,\n\nI'm interested in an estimate for the following work:\n\n` +
+          `Service: ${type}\n` +
+          `Size: ${size}\n` +
+          `Factors: ${risks.join(', ') || 'None'}\n` +
+          `Calculator Estimate: ${range}\n\n` +
+          `Please contact me to arrange an on-site inspection.\n\n` +
+          `Thanks!`;
+
+        window.location.href = `mailto:hoskin.haus@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      }
+
+      // Init
+      calculateTotal();
+    </script>
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="section-inner">
+        <h2>Local, Family-Owned. Built on Honest Work.</h2>
+        <p class="lead">
+          We’re a local, family-owned business based right here in Southern Illinois.
+          Owner/operator Charles “Chuck” Hoskin is LLC registered, TCIA certified, and fully insured.
+        </p>
+        <p>
+          From tight, technical climbs to wide-open land clearing, we bring the right gear, the right training,
+          and the right attitude to every job. When we say we’ll be there, we show up. When we’re done, we leave your
+          property cleaner and safer than we found it.
+        </p>
+        <div class="about-grid">
+          <div class="about-point">
+            <h3>Professional Gear</h3>
+            <p>Experienced climbing gear for hard-to-reach spots and a 52 ft boom truck for safe access where it matters
+              most.</p>
+          </div>
+          <div class="about-point">
+            <h3>Safety First</h3>
+            <p>OSHA-minded practices, certified training, and fully insured operation so you’re protected from start to
+              finish.</p>
+          </div>
+          <div class="about-point">
+            <h3>Neighborly Service</h3>
+            <p>We treat your property like it’s our own. Clear communication, fair pricing, and no cutting corners—only
+              trees.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services" id="services">
+      <div class="section-inner">
+        <h2>Services Offered</h2>
+        <p class="lead">
+          From single tree trims to full property cleanups, Hoskin Haus Tree Service is equipped for jobs big and small.
+        </p>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Tree Removal & Trimming</h3>
+            <p>Safe removals, careful trimming, and canopy shaping to protect your home, power lines, and property.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Yard Clearing & Landscaping</h3>
+            <p>Brush removal, overgrowth cleanup, and light landscaping to reclaim your yard and open up your space.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Pressure Washing</h3>
+            <p>Driveways, walkways, siding, and more—freshen up the rest of your property while we’re already on site.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Storm Cleanup & Emergency Service</h3>
+            <p>When storms hit, we respond with safe removal of fallen or hazardous trees and limbs.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Brush Hauling</h3>
+            <p>We don’t just cut—we clean up. Brush, limbs, and debris hauled away so you’re not left with a mess.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Safe, Certified Operation</h3>
+            <p>LLC & TCIA certified, fully insured, and focused on doing the job the right way, every time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="gallery" id="gallery">
+      <div class="section-inner">
+        <h2>On the Job</h2>
+        <p class="lead">Real work. Real equipment. Real results across Randolph County and surrounding areas.</p>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="images/truck.jpg" alt="Hoskin Haus boom truck set up on a job site">
+            <figcaption><strong>Tip:</strong> Using a boom truck isn't just faster—it protects your lawn by lifting
+              heavy wood instead of dragging it.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/job1.jpg" alt="Freshly cut logs stacked after tree removal">
+            <figcaption><strong>Tip:</strong> A clean job site is a safe job site. We leave your property better than we
+              found it.</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/job2.jpg" alt="Professional climber and saw operator working on a large tree">
+            <figcaption><em>"There is no such thing as too much safety gear."</em> – Chuck</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="images/job3.jpg" alt="Tree felling in progress with proper cuts and wedges">
+            <figcaption><strong>Tip:</strong> Precision felling requires reading the lean and the wind. Don't try this
+              at home!</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta-strip">
+      <div class="section-inner cta-strip-inner">
+        <div>
+          <h2>Let’s Get Your Trees Ready for Spring</h2>
+          <p>Honest work. Safe methods. Local and reliable. The right way, the safe way, the Hoskin Haus way.</p>
+        </div>
+        <div class="cta-strip-actions">
+          <a href="tel:16183177817" class="btn btn-primary">Call Chuck: 618-317-7817</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <div class="section-inner">
+        <h2>Contact Hoskin Haus Tree Service</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lead">
+              Serving Randolph County & surrounding Southern Illinois communities with safe, professional tree care.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Phone:</strong> <a href="tel:16183177817">618-317-7817</a></li>
+              <li><strong>Owner/Operator:</strong> Charles “Chuck” Hoskin</li>
+              <li><strong>Business:</strong> LLC &amp; TCIA Certified • Fully Insured</li>
+            </ul>
+            <p>If we’re on a job when you call, leave a message and we’ll get back to you as soon as we’re off the saw.
+            </p>
+          </div>
+          <div class="contact-note">
+            <h3>Free Estimates</h3>
+            <p>Every property is different. Call with your situation, and we’ll talk through the safest and most
+              cost‑effective options for your trees.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Hoskin Haus Tree Service. All rights reserved.</p>
+      <p class="footer-subtext">Proudly serving Randolph County & surrounding Southern Illinois.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>rset="UTF-8">
   <title>Hoskin Haus Tree Service | Randolph County, IL</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
